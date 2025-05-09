@@ -1,0 +1,7 @@
+{
+    "program": "Google_Charts_with_Python/main.py",
+    "module": "Google_Charts_with_Python.__main__",
+    "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+    }
+}

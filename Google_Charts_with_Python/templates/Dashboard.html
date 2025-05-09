@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="/scripts/BarChart.js"></script>
+    <script src="/scripts/AreaChart.js"></script>
+    <script src="/scripts/PieChart.js"></script>
+    <script src="/scripts/LineChart.js"></script>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawBarChart);
+    </script>
+
+    <table class="columns">
+        <tr>
+          <td><div id="bar_chart_dimensions" style="width: 600px; height: 600px border: 1px solid #ccc"></div></td>
+          <td><div id="area_chart_dimensions" style="width: 600px; height: 600px border: 1px solid #ccc"></div></td>
+        </tr>
+        <tr>
+          <td><div id="pie_chart_dimensions" style="width: 600px; height: 600px border: 1px solid #ccc"></div></td>
+          <td><div id="line_chart_dimensions" style="width: 600px; height: 600px border: 1px solid #ccc"></div></td>
+        </tr>
+    </table>
+  </body>
+</html>
